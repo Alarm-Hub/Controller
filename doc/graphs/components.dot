@@ -1,0 +1,12 @@
+graph G {
+    KeypadNode
+    GateNode
+    DisplayNode
+    Controller
+    MailCollector
+    
+    KeypadNode -- Controller
+    GateNode -- Controller
+    DisplayNode -- Controller
+    MailCollector -- Controller
+}
