@@ -3,9 +3,8 @@ from django.utils.translation import gettext_lazy as _
 
 
 def validate_code(value):
-    if len(value) > 9:
+    if value > 999999999:
         raise ValidationError(
-            _('%(value)s is to long',
-              params={'value': value},
-              )
+            _('%(value)s is to long'),
+            params={'value': value},
         )
