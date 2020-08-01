@@ -11,5 +11,10 @@ class Code(models.Model):
         validators=[validate_code]
     )
 
+    last_used = models.DateTimeField(
+        blank=True,
+        null=True
+    )
+
     def __str__(self):
         return self.code.__str__()
