@@ -10,3 +10,6 @@ class Code(models.Model):
         unique=True,
         validators=[validate_code]
     )
+
+    def __str__(self):
+        return self.code.__str__()
