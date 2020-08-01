@@ -6,4 +6,4 @@ from code_manager.models import Code
 
 @admin.register(Code)
 class CodeAdmin(admin.ModelAdmin):
-    pass
+    list_display = ('code', 'last_used')
