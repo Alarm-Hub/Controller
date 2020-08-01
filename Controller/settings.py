@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'Alarm_Hub.apps.AlarmHubConfig',
+    'code_manager'
 ]
 
 MIDDLEWARE = [
