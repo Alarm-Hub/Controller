@@ -5,4 +5,5 @@ from rest_framework import serializers
 class CodeSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Code
-        fields = ['id', 'last_used']  # code should never returned
+        fields = '__all__'
+        extra_kwargs = {'code': {'write_only': True}}
