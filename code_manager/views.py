@@ -17,6 +17,7 @@ class CodeView(ModelViewSet):
     queryset = Code.objects.all()
     serializer_class = CodeSerializer
     permission_classes = [CodeModelPermissions]
+    throttle_scope = 'code'
 
     @action(detail=False, methods=['post'], permission_classes=[CodeCheckPermission])
     def check(self, request):
