@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'Alarm_Hub.apps.AlarmHubConfig',
     'code_manager',
     'rest_framework',
-    'rest_framework_simplejwt.token_blacklist'
+    'rest_framework_simplejwt.token_blacklist',
+    'alarm_manager'
 ]
 
 MIDDLEWARE = [
